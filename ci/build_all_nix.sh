@@ -21,7 +21,7 @@ pyenv install -s $PY27
 pyenv shell $PY27
 python mk_wheel.py -DOS_SDK=local $CUDA_ARG -DPYTHON_CONFIG=$(pyenv prefix)/bin/python2-config
 
-PY35=3.5.5
+PY35=3.5.6
 pyenv install -s $PY35
 pyenv shell $PY35
 python mk_wheel.py -DOS_SDK=local $CUDA_ARG -DPYTHON_CONFIG=$(pyenv prefix)/bin/python3-config
