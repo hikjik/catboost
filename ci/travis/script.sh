@@ -19,10 +19,6 @@ function install_cuda9_linux()
     sudo apt-key adv --fetch-keys http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/7fa2af80.pub
     sudo apt-get update
     sudo apt-get -y install cuda-9-0
-
-    wget https://developer.nvidia.com/compute/cuda/9.0/Prod/patches/1/cuda-repo-ubuntu1604-9-0-local-cublas-performance-update_1.0-1_amd64-deb -0 cuda-repo-ubuntu1604-9-0-local-cublas-performance-update_1.0-1_amd64-deb
-    sudo dpkg -i cuda-repo-ubuntu1604-9-0-local-cublas-performance-update_1.0-1_amd64-deb
-    sudo apt-get update  
 }
 
 if [ "${CB_BUILD_AGENT}" == 'clang-linux-x86_64-release-cuda' ]; then
